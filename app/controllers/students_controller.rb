@@ -7,6 +7,12 @@ class StudentsController < ApplicationController
 
   def show
   end
+  
+  def activate
+    @student = Student.find_by(id: params[:id])
+    @student.activate
+    redirect_to student_path(@student)
+  end
 
   private
 
