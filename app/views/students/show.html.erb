@@ -1,7 +1,7 @@
 <h1><%= @student.to_s %></h1>
  <% #binding.pry %>
-<% if @student.active %>
-This student is active.
+<% if @student.active == true%>
+<p> This student is active. </p>
 <% else %>
-This student is currently inactive.
+<p> This student is currently inactive. </p>
 <% end %>
